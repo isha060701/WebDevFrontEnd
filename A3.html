@@ -1,0 +1,523 @@
+<!DOCTYPE html> 
+	<html> 
+	<head> 
+	<title>ROUND 2</title> 
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmZ6o11TxN0IHXtUY-O1qesf9PTl3rNdILA&usqp=CAU">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+	body {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("bg6.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+	}
+	
+	#S_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none;  
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	#S_button:hover {background-color: #000066}
+	
+	#N_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	#N_button:hover {background-color: #000066}
+	
+	.B_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	.B_button:hover {background-color: #000066}
+	
+	 
+	#result2{ 
+	padding: 30px 73px; 
+	background-color: #0066ff; 
+	color: white; 
+	font-size: 32px; 
+	font-weight: 900; 
+	border: 2px;
+    border-color: black; 
+    border-style: solid;
+	border-radius: 20px; 
+	} 
+	#result1{ 
+	padding: 10px 73px; 
+	color:palevioletred;  
+	background: url(w6.png); 
+	font-size: 25px; 
+	font-weight: 900; 
+	border: 3px;
+    border-color:palevioletred;
+    border-style: solid;
+	border-radius: 20px; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	
+	#RESULT1,#RESULT2{
+	display:none; 
+	}
+	
+
+	
+    
+	</style>
+	</head>
+	<body>
+	
+	
+<div id="clear">
+    
+    <div class="container p-3 my-3 bg-primary text-white">
+    <h1>ROUND TWO</h1>
+    <p>Solve these 10 final conundrums and see how much you score!</p>
+    </div>
+	
+	<div class="container">
+	<h1 class="display-5">1. Which country is known as 'Land of rising Sun'?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1a" name="optradio" value="option1"><h5>Scotland</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1b" name="optradio" value="option2"><h5>South Korea</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1c" name="optradio" value="option3"><h5>Thailand</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1d" name="optradio" value="option4"><h5>Japan</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">2. Identify the correctly matched currency</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2a" name="optradio" value="option1"><h5>South Africa - Peso</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2b" name="optradio" value="option2"><h5>Argentina - Lira</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2c" name="optradio" value="option3"><h5>China - Yuan</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2d" name="optradio" value="option4"><h5>Australia - Yen</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">3. How many square yards make an acre?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3a" name="optradio" value="option1"><h5>4480</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3b" name="optradio" value="option2"><h5>4880</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3c" name="optradio" value="option3"><h5>4840</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3d" name="optradio" value="option4"><h5>4440</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">4. Which is the capital of South Korea?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4a" name="optradio" value="option1"><h5>Seoul</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4b" name="optradio" value="option2"><h5>Busan</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4c" name="optradio" value="option3"><h5>Daegu</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4d" name="optradio" value="option4"><h5>Incheon</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">5. Which instrument is used to measure rainfall?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5a" name="optradio" value="option1"><h5>Hypsometer</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5b" name="optradio" value="option2"><h5>Anemometer</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5c" name="optradio" value="option3"><h5>Fathometer</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5d" name="optradio" value="option4"><h5>Pluviometer</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">6. Which scientist contributed to the theory of super conductivity?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6a" name="optradio" value="option1"><h5>Albert Claude</h6>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6b" name="optradio" value="option2"><h5>Leon Cooper</h6>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6c" name="optradio" value="option3"><h5>Joseph Lister</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6d" name="optradio" value="option4"><h5>Henry Cavendish</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">7. Who is the first man to walk in space?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7a" name="optradio" value="option1"><h5>Yuri Gagarin</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7b" name="optradio" value="option2"><h5>Alexei Leonov</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7c" name="optradio" value="option3"><h5>John Glenn</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7d" name="optradio" value="option4"><h5>Dennis Tito</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">8. Which country among the following has not taken part in the World War?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8a" name="optradio" value="option1"><h5>Switzerland</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8b" name="optradio" value="option2"><h5>Austria</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8c" name="optradio" value="option3"><h5>Belgium</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8d" name="optradio" value="option4"><h5>Netherlands</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">9. Name the extinct bird that that was formerly found on the island of Mauritius</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9a" name="optradio" value="option1"><h5>Duck-billed platypus</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9b" name="optradio" value="option2"><h5>Rhea</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9c" name="optradio" value="option3"><h5>Kiwi</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9d" name="optradio" value="option4"><h5>Dodo</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">10. Who invented algorithms for software for distributed computing?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10a" name="optradio" value="option1"><h5>Charles Bachman</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10b" name="optradio" value="option2"><h5>Dennis Ritchie</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10c" name="optradio" value="option3"><h5>Leslie Lamport</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10d" name="optradio" value="option4"><h5>Douglas T Ross</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-9" style="none;"></div>
+	<div class="col-lg-3 col-md-3 col-sm-3">
+	<button  id="S_button" type="button" form="Questions" value="Submit" onclick="check()">Submit</button>
+	</div>
+	</div>
+	</div>
+	<p><br></p>
+	
+	</div>
+	
+	<div id="RESULT1">
+	
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div  class="col-lg-6" id="result1"><br><br><br><br><br><br><br>KUDOS on completing the final round!<br>Your total score is <p id="score1"></p>Make sure to take the quizzes in other subjects too and see how you fare!! </div>
+	<div class="col-lg-3" style="none;"></div>
+	</div>
+	<p><br></p>
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-1">
+	<button  class="B_button" type="button" onclick="document.location='select_page_sample.html'">Back</button>
+	</div>
+	
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-2">
+	<button  id="N_button" type="button" onclick="document.location='contact.html'">Feedback Form</button>
+	</div>
+	<div class="col-lg-3" style="none;"></div>
+	
+	</div>
+	<p><br></p>
+	</div>
+	</div>
+	
+	
+	
+	
+	<div id="RESULT2">
+	<p><br><br></p>
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div  class="col-lg-6" id="result2">You have completed the final round!<br>Your total score is <p id="score2"></p>Make sure to take the quizzes in other subjects too and see how you fare!! </div>
+	<div class="col-lg-3" style="none;"></div>
+	</div>
+	<p><br><br></p>
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-1">
+	<button  class="B_button" type="button" onclick="document.location='select_page_sample.html'">Back</button>
+	</div>
+	
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-2">
+	<button  id="N_button" type="button" onclick="document.location='contact.html'">Feedback Form</button>
+	</div>
+	<div class="col-lg-3" style="none;"></div>
+	
+	</div>
+	</div>
+	</div>
+	
+	
+	<script>
+	function check(){
+	
+	var i,j,k,o;
+	for(j=0;j<10;j++)
+	{
+	k=document.forms[j];
+	o=0;
+	for (i = 0; i < 4; i++) {
+    if (k[i].checked) {
+    o++;}}
+    if(o==0){
+    if (!confirm("No option selected for question "+(j+1))) {
+    return;}}
+	}
+	
+	document.getElementById("clear").style.display="none";
+	var x=0;
+	if( document.getElementById("radio1d").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio2c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio3c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio4a").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio5d").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio6b").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio7b").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio8a").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio9d").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio10c").checked == true){
+    x++;
+	}
+	if(x>=6){
+	document.getElementById("RESULT1").style.display="block"; 
+	document.getElementById("score1").innerHTML = x;
+	}
+	else{
+	document.getElementById("RESULT2").style.display="block"; 
+	document.getElementById("score2").innerHTML = x;
+	}
+	
+	}
+	</script>
+	
+	</body>
+	</html>

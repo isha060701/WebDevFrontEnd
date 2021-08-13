@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+	<html> 
+	<head> 
+	<title>HOME PAGE</title> 
+	<style> 
+	body { 
+	background: linear-gradient(to bottom, rgba(102, 153, 255,0.7) 0%, rgba(153, 255, 153,0.5) 100%); 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: cover; 
+	} 
+	header { 
+	text-align: center; 
+	font-size: 35px; 
+	color:#990033; 
+	text-shadow: 2px 2px 5px; 
+	} 
+	p.intro{ 
+	margin: 35px 970px 75px 40px; 
+	padding: 50px; 
+	background-color: #ffffcc; 
+	color: #663300; 
+	font-size: 40px; 
+	font-weight: 900; 
+	border: 2px;
+    border-color: black; 
+    border-style: solid;
+	border-radius: 20px; 
+	max-width:500px; 
+	} 
+	.button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	.button:hover {background-color: #000066} 
+	.button1 { 
+	position: absolute; 
+	left: 1000px; 
+	top: 200px; 
+	} 
+	#button2{ 
+	position:absolute; 
+	left: 1000px; 
+	top:460px; 
+	display:none; 
+	} 
+	#start{ 
+	position:absolute; 
+	left: 1000px; 
+	top:550px; 
+	border-radius: 4px; 
+	background-color: #f4511e; 
+	border: none; 
+	color: #FFFFFF; 
+	text-align: center; 
+	font-size: 28px; 
+	padding: 20px; 
+	width: 200px; 
+	transition: all 0.5s; 
+	cursor: pointer; 
+	margin: 5px; 
+	display:none; 
+	} 
+	#start span { 
+	cursor: pointer; 
+	display: inline-block; 
+	position: relative; 
+	transition: 0.5s; 
+	} 
+	
+	#start span:after { 
+	content: '\00bb'; 
+	position: absolute; 
+	opacity: 0; 
+	top: 15px; 
+	right: -20px; 
+	transition: 0.5s; 
+	} 
+	
+	#start:hover span { 
+	padding-right: 35px; 
+	} 
+	
+	#start:hover span:after { 
+	opacity: 0.5; 
+	right: 0; 
+	} 
+	#usnEnter 
+	{ 
+	position: absolute; 
+	left: 1000px; 
+	top: 300px; 
+	color: #663300; 
+	font-size: 40px; 
+	font-weight: 900; 
+	max-width:500px; 
+	display:none; 
+	} 
+	#USN 
+	{ 
+	position: absolute; 
+	left: 1000px; 
+	top: 400px; 
+	display:none; 
+	} 
+	#validationText 
+	{ 
+	position: absolute; 
+	left: 1000px; 
+	top: 500px; 
+	color:red; 
+	font-size: 20px; 
+	font-weight: 700; 
+	} 
+	input[type=text] { 
+	padding: 12px 20px; 
+	margin: 8px 0; 
+	box-sizing: border-box; 
+	} 
+	</style> 
+	</head> 
+	<header> 
+	<h1>QUIZ TIME</h1> 
+	</header> 
+	<body> 
+	<p class="intro">We all learn things in<br>school. But how<br>many of us<br>remember prominent<br>facts learnt in certain<br>subjects?</p> 
+	<p style="color:#660066;font-size: 30px;font-family: 'Lucida Handwriting';text-indent: 50px; "><b>Click on Start Quiz to find out!</b></p> 
+	<p id="usnEnter">Enter your USN</p> 
+	<button class="button button1" type="button" onclick="startQuiz()">Start Quiz</button> 
+	<input type="text" id="USN" onchange="upperCase()"> 
+	<button id="button2" style="border: none;color: white;padding: 10px 16px;text-align: center;text-decoration: none;font-size: 11px;background-color:#0033cc;cursor: pointer;" type="button" onclick="validation()">Submit</button> 
+	<p id="validationText"></p> 
+	<button id="start" type="button" onclick="document.location='select.html'"><span>Go To Quiz</span></button> 
+	<script> 
+	function startQuiz(){ 
+	document.getElementById("usnEnter").style.display="block"; 
+	document.getElementById("USN").style.display="block"; 
+	document.getElementById("button2").style.display="block"; 
+	} 
+	function upperCase() { 
+	var x = document.getElementById("USN"); 
+	x.value = x.value.toUpperCase(); 
+	} 
+	function validation(){ 
+	var y, Text,result; 
+	var o; 
+	y = document.getElementById("USN").value; 
+	result=y.match('1BM[0-9][0-9]CS[0-9][0-9][0-9]'); 
+	if (y == "" || y == null) { 
+	alert("USN must be filled out"); 
+	return false; 
+	} 
+	else if(y==result) 
+	o=1; 
+	else{ 
+	Text="Please enter a valid USN"; 
+	o=2; 
+	} 
+	if(o==2) 
+	document.getElementById("validationText").innerHTML = Text; 
+	if(o==1){ 
+	document.getElementById("start").style.display="block"; 
+	document.getElementById("validationText").style.display="none"; 
+	} 
+	} 
+	</script> 
+	</body> 
+	</html> 
+	
+	
+	
+

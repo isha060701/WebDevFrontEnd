@@ -1,0 +1,521 @@
+<!DOCTYPE html> 
+	<html> 
+	<head> 
+	<title>ROUND 2</title>
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmZ6o11TxN0IHXtUY-O1qesf9PTl3rNdILA&usqp=CAU">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+	body {
+   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("bg6.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+       }
+	
+	#S_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none;  
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	#S_button:hover {background-color: #000066}
+
+        #N_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	#N_button:hover {background-color: #000066}
+	
+	
+	
+	.B_button { 
+	border: none; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+	background-color:#0033cc; 
+	border-radius: 15px; 
+	box-shadow: 5px 9px #669999; 
+	} 
+	.B_button:hover {background-color: #000066}
+	
+	 
+	#result2{ 
+	padding: 30px 73px; 
+	background-color: #0066ff; 
+	color: white; 
+	font-size: 32px; 
+	font-weight: 900; 
+	border: 2px;
+    border-color: black; 
+    border-style: solid;
+	border-radius: 20px; 
+	} 
+	#result1{ 
+	padding: 10px 73px; 
+	color:palevioletred;  
+	background: url(w6.png); 
+	font-size: 25px; 
+	font-weight: 900; 
+	border: 3px;
+    border-color:palevioletred;
+    border-style: solid;
+	border-radius: 20px; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	
+	#RESULT1,#RESULT2{
+	display:none; 
+	}
+	
+
+	
+    
+	</style>
+	</head>
+	<body>
+	
+	
+<div id="clear">
+    
+    <div class="container p-3 my-3 bg-primary text-white">
+    <h1>ROUND TWO</h1>
+    <p>Solve these 10 final conundrums and see how much you score!</p>
+    </div>
+	
+	<div class="container">
+	<h1 class="display-5">1. What tissues connect bones to muscles?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1a" name="optradio" value="option1"><h5>Tendons</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1b" name="optradio" value="option2"><h5>Cartilages</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1c" name="optradio" value="option3"><h5>Ligaments</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio1d" name="optradio" value="option4"><h5>Skin</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">2. What is it called when you make light change direction by passing it through a lens?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2a" name="optradio" value="option1"><h5>Diffraction</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2b" name="optradio" value="option2"><h5>Refraction</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2c" name="optradio" value="option3"><h5>Reflection</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio2d" name="optradio" value="option4"><h5>None of these</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">3. Catalytic converters are made of</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3a" name="optradio" value="option1"><h5>Alkaline Earth metals</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3b" name="optradio" value="option2"><h5>Carbon</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3c" name="optradio" value="option3"><h5>Transition metals</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio3d" name="optradio" value="option4"><h5>Hydroen</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">4. What happens when a drop of glycerol is added to crushed KMnO4 spread on a paper?</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4a" name="optradio" value="option1"><h5>There is a crackling sound</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4b" name="optradio" value="option2"><h5>There is a violent explosion</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4c" name="optradio" value="option3"><h5>The paper gets ignited</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio4d" name="optradio" value="option4"><h5>There is no reaction</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">5. Glass is a </h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5a" name="optradio" value="option1"><h5>Superheated solid</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5b" name="optradio" value="option2"><h5>Superheated liquid</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5c" name="optradio" value="option3"><h5>Supercooled gas</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio5d" name="optradio" value="option4"><h5>Supercooled liquid</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">6. Danger signs are red because</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6a" name="optradio" value="option1"><h5>Is least bright</h6>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6b" name="optradio" value="option2"><h5>Has low velocity</h6>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6c" name="optradio" value="option3"><h5>Undergoes least deviation</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio6d" name="optradio" value="option4"><h5>Gives comfort to the eyes </h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">7. Magnetism in materials is due to</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7a" name="optradio" value="option1"><h5>Electrons at rest</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7b" name="optradio" value="option2"><h5>Protons at rest</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7c" name="optradio" value="option3"><h5>Circular motion of electrons</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio7d" name="optradio" value="option4"><h5>Neutrons at rest</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">8. Fibre optics work on the principle of</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8a" name="optradio" value="option1"><h5>Scattering of light</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8b" name="optradio" value="option2"><h5>Optical rotation</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8c" name="optradio" value="option3"><h5>Total internal reflection</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio8d" name="optradio" value="option4"><h5>Total internal absorption</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">9. Clear nights are colder than cloudy nights because of</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9a" name="optradio" value="option1"><h5>Conduction</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9b" name="optradio" value="option2"><h5>Condensation</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9c" name="optradio" value="option3"><h5>Radiation</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio9d" name="optradio" value="option4"><h5>Insolation</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<h1 class="display-5">10. Solar energy is converted into chemical energy during</h1>
+	<form>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10a" name="optradio" value="option1"><h5>Photosynthesis</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10b" name="optradio" value="option2"><h5>Transpiration</h5>
+    </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10c" name="optradio" value="option3"><h5>Diffusion</h5>
+    </label>
+    </div>
+	<div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" id="radio10d" name="optradio" value="option4"><h5>Osmosis</h5>
+    </label>
+    </div>
+	</form>
+	</div>
+	
+	<p><br></p>
+	<hr>
+	
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-9" style="none;"></div>
+	<div class="col-lg-3 col-md-3 col-sm-3">
+	<button  id="S_button" type="button" form="Questions" value="Submit" onclick="check()">Submit</button>
+	</div>
+	</div>
+	</div>
+	<p><br></p>
+	
+	</div>
+	
+	<div id="RESULT1">
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div  class="col-lg-6" id="result1"><br><br><br><br><br><br><br>KUDOS on completing the final round!<br>Your total score is <p id="score1"></p>Make sure to take the quizzes in other subjects too and see how you fare!! </div>
+	<div class="col-lg-3" style="none;"></div>
+	</div>
+	<p><br></p>
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-1">
+	<button  class="B_button" type="button" onclick="document.location='select_page_sample.html'">Back</button>
+	</div>
+	
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-2">
+	<button  id="N_button" type="button" onclick="document.location='contact.html'">Feedback Form</button>
+	</div>
+	<div class="col-lg-3" style="none;"></div>
+	
+	</div>
+	<p><br></p>
+	</div>
+	</div>
+		
+		
+		<div id="RESULT2">
+	<p><br><br></p>
+	<div class="container">
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div  class="col-lg-6" id="result2">You have completed the final round!<br>Your total score is <p id="score2"></p>Make sure to take the quizzes in other subjects too and see how you fare!! </div>
+	<div class="col-lg-3" style="none;"></div>
+	</div>
+	<p><br><br></p>
+	<div class="row" >
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-1">
+	<button  class="B_button" type="button" onclick="document.location='select_page_sample.html'">Back</button>
+	</div>
+	
+	<div class="col-lg-3" style="none;"></div>
+	<div class="col-lg-2">
+	<button  id="N_button" type="button" onclick="document.location='contact.html'">Feedback Form</button>
+	</div>
+	<div class="col-lg-3" style="none;"></div>
+	
+	</div>
+	</div>
+	</div>
+	
+	
+	<script>
+	function check(){
+	
+	var i,j,k,o;
+	for(j=0;j<10;j++)
+	{
+	k=document.forms[j];
+	o=0;
+	for (i = 0; i < 4; i++) {
+    if (k[i].checked) {
+    o++;}}
+    if(o==0){
+    if (!confirm("No option selected for question "+(j+1))) {
+    return;}}
+	}
+	
+	document.getElementById("clear").style.display="none";
+	var x=0;
+	if( document.getElementById("radio1a").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio2b").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio3c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio4c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio5d").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio6c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio7c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio8c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio9c").checked == true){
+    x++;
+	}
+	if( document.getElementById("radio10a").checked == true){
+    x++;
+	}
+	if(x>=6){
+	document.getElementById("RESULT1").style.display="block"; 
+	document.getElementById("score1").innerHTML = x;
+	}
+	else{
+	document.getElementById("RESULT2").style.display="block"; 
+	document.getElementById("score2").innerHTML = x;
+	}
+	}
+	</script>
+	
+	</body>
+	</html>
